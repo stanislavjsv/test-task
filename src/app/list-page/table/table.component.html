@@ -1,0 +1,22 @@
+<div>
+    <div class="d-flex pb-1">
+        <div  class="col text-center">
+            <strong>
+                Name 
+            </strong>
+        </div>
+        <div class="col text-center">
+            <strong>
+                Account
+            </strong>
+        </div>
+    </div>
+    <div *ngFor="let item of currentArr" class="table-line d-flex">
+        <div  class="col text-center">
+            {{ item.name.last}} {{ item.name.first}}
+        </div>
+        <div class="col text-center">
+            {{ item.amount }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="btn btn-danger btn-block"
+[routerLink]="['']"
+>Back</div>
+
+<a class="btn btn-primary btn-block"
+          routerLinkActive="btn-outline-primary"
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 0 }" 
+          >See all transactions</a>
+
+<div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs flex-column flex-sm-row">
+            <li class="nav-item text-center flex-grow-1">
+                <a class="nav-link" 
+                routerLinkActive="active font-weight-bold" 
+                [routerLink]="['/navigator']"
+                [queryParams]="{ tab: 1 }"
+                >Income</a>
+            </li>
+            <li class="nav-item text-center flex-grow-1">
+                <a class="nav-link" 
+                routerLinkActive="active font-weight-bold" 
+                [routerLink]="['/navigator']"
+                [queryParams]="{ tab: 2 }"
+                >Outcome</a>
+            </li>
+            <li class="nav-item text-center flex-grow-1">
+                <a class="nav-link" 
+                routerLinkActive="active font-weight-bold" 
+                [routerLink]="['/navigator']"
+                [queryParams]="{ tab: 3 }"
+                >Loans</a>
+            </li>
+            <li class="nav-item text-center flex-grow-1">
+                <a class="nav-link" 
+                routerLinkActive="active font-weight-bold" 
+                [routerLink]="['/navigator']"
+                [queryParams]="{ tab: 4 }"
+                >Ivestments</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+

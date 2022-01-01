@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="card rounded-0 mb-2 mb-sm-0">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h4 class="card-title pl-sm-5 ml-sm-5 ">Welcome</h4>
+        <p class="card-text">
+          Witch supporting text below as a natural lead-in to additional content.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-primary center"
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 0 }" 
+          >See transactions</a>
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <p class="card-text text-center">
+          You have 100 transactions
+        </p>
+      </div>
+    </div>
+  
+    <div class="card-deck mx-0">
+      <div class="card m-0 mr-sm-2 mt-sm-2 my-2 my-sm-0">
+        <div class="card-body">
+          <h4 class="card-title">{{incomeCount}}</h4>
+          <p class="card-text">
+            Income
+          </p>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-primary center px-5"
+            [routerLink]="['/navigator']"
+            [queryParams]="{ tab: 1 }" 
+            >See all</a>
+          </div>
+        </div>
+      </div>
+      <div class="card m-0 mt-sm-2 my-2 my-sm-0">
+        <div class="card-body">
+          <h4 class="card-title">{{investmentCount}}</h4>
+          <p class="card-text">
+            Investments
+          </p>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-primary center px-5"
+            [routerLink]="['/navigator']"
+            [queryParams]="{ tab: 4 }"
+            >See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-deck mx-0">
+      <div class="card m-0 mr-sm-2 mt-sm-2 my-2 my-sm-0">
+        <div class="card-body">
+          <h4 class="card-title">{{outcomeCount}}</h4>
+          <p class="card-text">
+            Outcome
+          </p>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-primary center px-5"
+            [routerLink]="['/navigator']"
+            [queryParams]="{ tab: 2 }"
+            >See all</a>
+          </div>
+        </div>
+      </div>
+      <div class="card m-0 mt-sm-2 my-2 my-sm-0">
+        <div class="card-body">
+          <h4 class="card-title">{{loanCount}}</h4>
+          <p class="card-text">
+            Loans
+          </p>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-primary center px-5"
+            [routerLink]="['/navigator']"
+            [queryParams]="{ tab: 3 }"
+            >See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
